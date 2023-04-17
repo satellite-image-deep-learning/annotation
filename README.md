@@ -1,12 +1,15 @@
-<p align="center">
-<img src="logo.png" width="700">
+<div align="center">
+  <p>
+    <a href="https://www.satellite-image-deep-learning.com/">
+        <img src="logo.png" width="700">
+    </a>
 </p>
-
-This page provides information on the annotation of datasets for deep learning applied to satellite and aerial imagery. Learn more at:
+  <h2>Annotation of datasets for deep learning applied to satellite and aerial imagery.</h2>
 
 # 👉 [satellite-image-deep-learning.com](https://www.satellite-image-deep-learning.com/) 👈
+</div>
 
-**How to use this repository:** if you know exactly what you are looking for (e.g. you have the paper name) you can `Control+F` to search for it in this page (or search in the raw markdown).
+**How to use this repository:** if you know exactly what you are looking for (e.g. you have the paper name) you can `Control+F` to search for it in this page
 
 ## Contents
 * [Introduction to annotation](https://github.com/satellite-image-deep-learning/annotation#introduction-to-annotation)
