@@ -9,8 +9,14 @@ This page provides information on the annotation of datasets for deep learning a
 **How to use this repository:** if you know exactly what you are looking for (e.g. you have the paper name) you can `Control+F` to search for it in this page (or search in the raw markdown).
 
 ## Contents
+* [Introduction to annotation](https://github.com/satellite-image-deep-learning/annotation#introduction-to-annotation)
+* [Annotation tools with GEO features](https://github.com/satellite-image-deep-learning/annotation#annotation-tools-with-geo-features)
+* [Open source annotation tools](https://github.com/satellite-image-deep-learning/annotation#open-source-annotation-tools)
+* [Cloud hosted & paid annotation tools & services](https://github.com/satellite-image-deep-learning/annotation#cloud-hosted--paid-annotation-tools--services)
+* [Annotation formats](https://github.com/satellite-image-deep-learning/annotation#annotation-formats)
+* [Annotation visualisation & conversion tools](https://github.com/satellite-image-deep-learning/annotation#annotation-visualisation--conversion-tools)
 
-# Introduction to annotation
+## Introduction to annotation
 For supervised machine learning, you will require annotated images. For example if you are performing object detection you will need to annotate images with bounding boxes. Check that your annotation tool of choice supports large image (likely geotiff) files, as not all will. Note that GeoJSON is widely used by remote sensing researchers but this annotation format is not commonly supported in general computer vision frameworks, and in practice you may have to convert the annotation format to use the data with your chosen framework. There are both closed and open source tools for creating and converting annotation formats. Some of these tools are simply for performing annotation, whilst others add features such as dataset management and versioning. Note that self-supervised and active learning approaches might circumvent the need to perform a large scale annotation exercise. Note that tiffs/geotiffs cannot be displayed by most browsers (Chrome), but CAN render in Safari.
 
 ## Annotation tools with GEO features
@@ -50,6 +56,7 @@ For supervised machine learning, you will require annotated images. For example 
 * [Detection-Label-Tool](https://github.com/px39n/Detection-Label-Tool) -> Change detection and object annotation, uses PyQt
 * [image_sorter](https://github.com/clcr/image_sorter) -> A quick interface for sorting a folder of images into two other folders
 * [bulk](https://github.com/koaning/bulk) -> A Simple Bulk Labelling Tool using embeddings
+* [LabCD](https://github.com/geoyee/LabCD/blob/master/README_EN.md) -> remote sensing change detection annotation tool
 
 ## Cloud hosted & paid annotation tools & services
 Several open source tools are also available on the cloud, including CVAT, label-studio & Diffgram. In general cloud solutions will provide a lot of infrastructure and storage for you, as well as integration with outsourced annotators.
