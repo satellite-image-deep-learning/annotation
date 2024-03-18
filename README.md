@@ -32,6 +32,7 @@ For supervised machine learning, you will require annotated images. For example 
 * [RSLabel](https://github.com/yonglinZ/RSLabel) -> remote sensing (RS) image annotation tool for deep learning
 * [encord](https://encord.com/) -> supports annotatin SAR
 * [Flood-Annotation-Tool](https://github.com/saugatadhikari/Flood-Annotation-Tool) -> Annotation tool to annotate flooded and non-flooded regions on satellite image, uses jupyter notebook
+* [ds-annotate](https://github.com/developmentseed/ds-annotate) -> Magic wand and Segment Anything Model (SAM) annotation tool for machine learning training data, from Development seed.
 
 ## Open source annotation tools
 * [awesome-data-labeling](https://github.com/heartexlabs/awesome-data-labeling) -> long list of annotation tools
