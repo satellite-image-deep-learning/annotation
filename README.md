@@ -64,7 +64,6 @@ For supervised machine learning, you will require annotated images. For example 
 
 ## Cloud hosted & paid annotation tools & services
 Several open source tools are also available on the cloud, including CVAT, label-studio & Diffgram. In general cloud solutions will provide a lot of infrastructure and storage for you, as well as integration with outsourced annotators.
-* [GroundWork](https://groundwork.azavea.com/) is designed for annotating and labeling geospatial data like satellite imagery, from Azavea
 * [labelbox.com](https://labelbox.com/) -> free tier is quite generous, supports annotating Geotiffs & returning annotations with geospatial coordinates. Watch [this webcast](https://www.arturo.ai/webcastbuilding-ai-products-from-the-ground-up/)
 * [Roboflow](https://roboflow.com/robincole) -> in addition to annotation this platform makes it easy to convert between annotation formats & manage datasets, as well as train and deploy custom models to private API endpoints. Read [How to Train Computer Vision Models on Aerial Imagery](https://blog.roboflow.com/how-to-use-roboflow-with-aerial-imagery/)
 * [supervise.ly](https://supervise.ly) is one of the more fully featured platforms, decent free tier
