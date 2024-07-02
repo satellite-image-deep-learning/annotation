@@ -29,7 +29,7 @@ For supervised machine learning, you will require annotated images. For example 
 * If you are considering building an in house annotation platform [read this article](https://medium.com/earthcube-stories/ai-products-and-remote-sensing-yes-it-is-hard-and-yes-you-need-a-good-infra-4b5d6cf822f1). Used PostGis database, GeoJson format and GIS standard in a stateless architecture
 * [satellite-imagery-labeling-tool](https://github.com/microsoft/satellite-imagery-labeling-tool) -> from Microsoft, this is a lightweight web-interface for creating and sharing vector annotations over satellite/aerial imagery scenes
 * [RSLabel](https://github.com/yonglinZ/RSLabel) -> remote sensing (RS) image annotation tool for deep learning
-* [encord](https://encord.com/) -> supports annotatin SAR
+* [encord](https://encord.com/) -> supports annotating SAR
 * [Flood-Annotation-Tool](https://github.com/saugatadhikari/Flood-Annotation-Tool) -> Annotation tool to annotate flooded and non-flooded regions on satellite image, uses jupyter notebook
 * [ds-annotate](https://github.com/developmentseed/ds-annotate) -> Magic wand and Segment Anything Model (SAM) annotation tool for machine learning training data, from Development seed.
 * [BOSC_toolbox](https://github.com/RicardDurall/BOSC_toolbox) -> a comprehensive toolbox for manipulating and annotating aerial imagery, utilises Segment Anything and FastSAM
