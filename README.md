@@ -36,6 +36,7 @@ Relatively few annotation tools support Geotiffs directly. If not in this list, 
 * [Flood-Annotation-Tool](https://github.com/saugatadhikari/Flood-Annotation-Tool) -> Annotation tool to annotate flooded and non-flooded regions on satellite image, uses jupyter notebook
 * [ds-annotate](https://github.com/developmentseed/ds-annotate) -> Magic wand and Segment Anything Model (SAM) annotation tool for machine learning training data, from Development seed.
 * [BOSC_toolbox](https://github.com/RicardDurall/BOSC_toolbox) -> a comprehensive toolbox for manipulating and annotating aerial imagery, utilises Segment Anything and FastSAM
+* [SCANEO](https://github.com/earthpulse/scaneo) -> an AI-powered web tool for smart labeling of satellite data training datasets.
 
 ## Open source annotation tools
 * [awesome-data-labeling](https://github.com/heartexlabs/awesome-data-labeling) -> long list of annotation tools
@@ -63,6 +64,7 @@ Relatively few annotation tools support Geotiffs directly. If not in this list, 
 * [image_sorter](https://github.com/clcr/image_sorter) -> A quick interface for sorting a folder of images into two other folders
 * [bulk](https://github.com/koaning/bulk) -> A Simple Bulk Labelling Tool using embeddings
 * [LabCD](https://github.com/geoyee/LabCD/blob/master/README_EN.md) -> remote sensing change detection annotation tool
+* [gradio_image_annotator](https://github.com/edgarGracia/gradio_image_annotator) -> A Gradio component that can be used to annotate images with bounding boxes.
 
 ## Cloud hosted & paid annotation tools & services
 Several open source tools are also available on the cloud, including CVAT, label-studio & Diffgram. In general cloud solutions will provide a lot of infrastructure and storage for you, as well as integration with outsourced annotators.
