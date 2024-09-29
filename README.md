@@ -22,6 +22,15 @@
 ## Introduction to annotation
 For supervised machine learning, you will require annotated images. For example if you are performing object detection you will need to annotate images with bounding boxes. Check that your annotation tool of choice supports large image (likely geotiff) files, as not all will. Note that GeoJSON is widely used by remote sensing researchers but this annotation format is not commonly supported in general computer vision frameworks, and in practice you may have to convert the annotation format to use the data with your chosen framework. There are both closed and open source tools for creating and converting annotation formats. Some of these tools are simply for performing annotation, whilst others add features such as dataset management and versioning. Note that self-supervised and active learning approaches might circumvent the need to perform a large scale annotation exercise. Note that tiffs/geotiffs cannot be displayed by most browsers (Chrome), but CAN render in Safari.
 
+## Annotation formats
+Note there are many annotation formats, although PASCAL VOC and coco-json are the most commonly used. I recommend using geojson for storing polygons, then converting these to the required format when needed. Many more formats listed [here](https://roboflow.com/formats)
+* For geospatial data, create geojson annotations and convert as required
+* PASCAL VOC format: XML files in the format used by ImageNet
+* coco-json format: JSON in the format used by the 2015 COCO dataset
+* YOLO Darknet TXT format: contains one text file per image, used by YOLO
+* Tensorflow TFRecord: a proprietary binary file format used by the Tensorflow Object Detection API
+* OBB: orinted bounding boxes are polygons representing rotated rectangles
+
 ## Annotation tools with Geotiff support
 Relatively few annotation tools support Geotiffs directly. If not in this list, assume they just support PNG & JPEG image formats
 * [Groundwork](https://element84.com/groundwork/) -> A free image labeling tool for creating custom training datasets from satellite imagery
@@ -39,8 +48,6 @@ Relatively few annotation tools support Geotiffs directly. If not in this list, 
 * [SCANEO](https://github.com/earthpulse/scaneo) -> an AI-powered web tool for smart labeling of satellite data training datasets.
 
 ## Open source annotation tools
-* [awesome-data-labeling](https://github.com/heartexlabs/awesome-data-labeling) -> long list of annotation tools
-* [awesome-open-data-annotation](https://github.com/zenml-io/awesome-open-data-annotation) -> another long list of annotation tools
 * [labelImg](https://github.com/tzutalin/labelImg) is the classic desktop tool, limited to bounding boxes for object detection. Also checkout [roLabelImg](https://github.com/cgvict/roLabelImg) which supports ROTATED rectangle regions, as often occurs in aerial imagery. [labelImg_OBB](https://github.com/heshameraqi/labelImg_OBB) is another fork supporting orinted bounding boxes (OBB)
 * [Labelme](https://github.com/wkentaro/labelme) is a very popular & simple dektop app for polygonal annotation suitable for object detection and semantic segmentation. Note it outputs annotations in a custom LabelMe JSON format which you will need to convert, e.g. using [labelme2coco](https://github.com/fcakyon/labelme2coco). Read [Labelme Image Annotation for Geotiffs](https://medium.com/@wvsharber/labelme-image-annotation-for-geotiffs-b460ba83804f)
 * [Label Studio](https://labelstud.io/) is a multi-type data labeling and annotation tool with standardized output format, syncing to buckets, and supports importing pre-annotations (create with a model). Checkout [label-studio-converter](https://github.com/heartexlabs/label-studio-converter) for converting Label Studio annotations into common dataset formats
@@ -65,24 +72,12 @@ Relatively few annotation tools support Geotiffs directly. If not in this list, 
 * [bulk](https://github.com/koaning/bulk) -> A Simple Bulk Labelling Tool using embeddings
 * [LabCD](https://github.com/geoyee/LabCD/blob/master/README_EN.md) -> remote sensing change detection annotation tool
 * [gradio_image_annotator](https://github.com/edgarGracia/gradio_image_annotator) -> A Gradio component that can be used to annotate images with bounding boxes.
+* [digitalsreeni-image-annotator](https://github.com/bnsreenu/digitalsreeni-image-annotator) -> A python based GUI to annotate images and save annotations as COCO style JSON format.
 
-## Cloud hosted & paid annotation tools & services
+## Cloud hosted tools & services
 Several open source tools are also available on the cloud, including CVAT, label-studio & Diffgram. In general cloud solutions will provide a lot of infrastructure and storage for you, as well as integration with outsourced annotators.
-* [labelbox.com](https://labelbox.com/) -> free tier is quite generous, supports annotating Geotiffs & returning annotations with geospatial coordinates. Watch [this webcast](https://www.arturo.ai/webcastbuilding-ai-products-from-the-ground-up/)
 * [Roboflow](https://roboflow.com/robincole) -> in addition to annotation this platform makes it easy to convert between annotation formats & manage datasets, as well as train and deploy custom models to private API endpoints. Read [How to Train Computer Vision Models on Aerial Imagery](https://blog.roboflow.com/how-to-use-roboflow-with-aerial-imagery/)
-* [supervise.ly](https://supervise.ly) is one of the more fully featured platforms, decent free tier
-* AWS supports image annotation via the Rekognition Custom Labels console
 * [rectlabel](https://rectlabel.com/) is a desktop app for MacOS to annotate images for bounding box object detection and segmentation, paid and free (rectlabel-lite) versions
-* [hasty.ai](https://hasty.ai/) -> supports model assisted annotation & inferencing
-
-## Annotation formats
-Note there are many annotation formats, although PASCAL VOC and coco-json are the most commonly used. I recommend using geojson for storing polygons, then converting these to the required format when needed.
-* PASCAL VOC format: XML files in the format used by ImageNet
-* coco-json format: JSON in the format used by the 2015 COCO dataset
-* YOLO Darknet TXT format: contains one text file per image, used by YOLO
-* Tensorflow TFRecord: a proprietary binary file format used by the Tensorflow Object Detection API
-* Many more formats listed [here](https://roboflow.com/formats)
-* OBB: orinted bounding boxes are polygons representing rotated rectangles
 
 ## Annotation visualisation & conversion tools
 Tools to visualise annotations & convert between formats. Note that most annotation software will allow you to visualise existing annotations
