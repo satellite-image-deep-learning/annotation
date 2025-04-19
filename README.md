@@ -73,6 +73,7 @@ Relatively few annotation tools support Geotiffs directly. If not in this list, 
 * [LabCD](https://github.com/geoyee/LabCD/blob/master/README_EN.md) -> remote sensing change detection annotation tool
 * [gradio_image_annotator](https://github.com/edgarGracia/gradio_image_annotator) -> A Gradio component that can be used to annotate images with bounding boxes.
 * [digitalsreeni-image-annotator](https://github.com/bnsreenu/digitalsreeni-image-annotator) -> A python based GUI to annotate images and save annotations as COCO style JSON format.
+* [Tator](https://github.com/stephansturges/Tator) -> Yolo annotation tool with CLIP and SAM on the backend to auto-annotate
 
 ## Cloud hosted tools & services
 Several open source tools are also available on the cloud, including CVAT, label-studio & Diffgram. In general cloud solutions will provide a lot of infrastructure and storage for you, as well as integration with outsourced annotators.
