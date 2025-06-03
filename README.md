@@ -46,6 +46,7 @@ Relatively few annotation tools support Geotiffs directly. If not in this list, 
 * [ds-annotate](https://github.com/developmentseed/ds-annotate) -> Magic wand and Segment Anything Model (SAM) annotation tool for machine learning training data, from Development seed.
 * [BOSC_toolbox](https://github.com/RicardDurall/BOSC_toolbox) -> a comprehensive toolbox for manipulating and annotating aerial imagery, utilises Segment Anything and FastSAM
 * [SCANEO](https://github.com/earthpulse/scaneo) -> an AI-powered web tool for smart labeling of satellite data training datasets.
+* [geo-vision-labeler](https://github.com/microsoft/geo-vision-labeler) -> A flexible image labeling tool that uses a vision LLM to generate descriptions and classify images into user-defined categories.
 
 ## Open source annotation tools
 * [labelImg](https://github.com/tzutalin/labelImg) is the classic desktop tool, limited to bounding boxes for object detection. Also checkout [roLabelImg](https://github.com/cgvict/roLabelImg) which supports ROTATED rectangle regions, as often occurs in aerial imagery. [labelImg_OBB](https://github.com/heshameraqi/labelImg_OBB) is another fork supporting orinted bounding boxes (OBB)
