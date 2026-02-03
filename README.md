@@ -9,15 +9,15 @@
 # 👉 [satellite-image-deep-learning.com](https://www.satellite-image-deep-learning.com/) 👈
 </div>
 
-**How to use this repository:** if you know exactly what you are looking for (e.g. you have the paper name) you can `Control+F` to search for it in this page
+**How to use this repository:** if you know exactly what you are looking for (e.g. you have the paper name) you can use `Ctrl+F` (Windows/Linux) or `Cmd+F` (macOS) to search within this page
 
 ## Contents
-* [Introduction to annotation](https://github.com/satellite-image-deep-learning/annotation#introduction-to-annotation)
-* [Annotation tools with GEO features](https://github.com/satellite-image-deep-learning/annotation#annotation-tools-with-geo-features)
-* [Open source annotation tools](https://github.com/satellite-image-deep-learning/annotation#open-source-annotation-tools)
-* [Cloud hosted & paid annotation tools & services](https://github.com/satellite-image-deep-learning/annotation#cloud-hosted--paid-annotation-tools--services)
-* [Annotation formats](https://github.com/satellite-image-deep-learning/annotation#annotation-formats)
-* [Annotation visualisation & conversion tools](https://github.com/satellite-image-deep-learning/annotation#annotation-visualisation--conversion-tools)
+* [Introduction to annotation](#introduction-to-annotation)
+* [Annotation formats](#annotation-formats)
+* [Annotation tools with Geotiff support](#annotation-tools-with-geotiff-support)
+* [Open source annotation tools](#open-source-annotation-tools)
+* [Cloud hosted tools & services](#cloud-hosted-tools--services)
+* [Annotation visualisation & conversion tools](#annotation-visualisation--conversion-tools)
 
 ## Introduction to annotation
 For supervised machine learning, you will require annotated images. For example if you are performing object detection you will need to annotate images with bounding boxes. Check that your annotation tool of choice supports large image (likely geotiff) files, as not all will. Note that GeoJSON is widely used by remote sensing researchers but this annotation format is not commonly supported in general computer vision frameworks, and in practice you may have to convert the annotation format to use the data with your chosen framework. There are both closed and open source tools for creating and converting annotation formats. Some of these tools are simply for performing annotation, whilst others add features such as dataset management and versioning. Note that self-supervised and active learning approaches might circumvent the need to perform a large scale annotation exercise. Note that tiffs/geotiffs cannot be displayed by most browsers (Chrome), but CAN render in Safari.
