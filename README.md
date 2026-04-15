@@ -33,6 +33,7 @@ Note there are many annotation formats, although PASCAL VOC and coco-json are th
 
 ## Annotation tools with Geotiff support
 Relatively few annotation tools support Geotiffs directly. If not in this list, assume they just support PNG & JPEG image formats
+* [Labelme](https://github.com/wkentaro/labelme) is a very popular & simple dektop app for polygonal annotation suitable for object detection and semantic segmentation.
 * [Groundwork](https://element84.com/groundwork/) -> A free image labeling tool for creating custom training datasets from satellite imagery
 * [Kili](https://kili-technology.com/) -> see their docs for importing multi-layer geosat assets
 * [labelbox.com](https://labelbox.com/) -> watch their webcast on building AI products from the ground up
@@ -50,10 +51,10 @@ Relatively few annotation tools support Geotiffs directly. If not in this list, 
 * [label-tiles](https://github.com/noahgolmant/label-tiles) -> Label geospatial data with tile servers, download the underlying tile images for ML training and inference, and export labels in COCO annotation format or GeoJSON/GeoParquet.
 * [labelme-v6](https://labelme.io/blog/labelme-v6) -> v6 can open very large images — including multispectral and float32 GeoTIFFs used in satellite and aerial imagery.
 * [SentinelLabel](https://github.com/msalehsaudi/SentinelLabel) -> SentinelLabel is a standalone, high-performance geospatial labeling application designed for machine learning teams who need quality training data fast. [Medium post](https://medium.com/@m.saleh.saudi/open-source-labeling-for-sentinel-2-why-i-built-sentinellabel-c9023eca7236)
+* [cdse-tsbrowser](https://github.com/jonasViehweger/cdse-tsbrowser) -> A time series browser using CDSE to load Satellite data.
 
 ## Open source annotation tools
 * [labelImg](https://github.com/tzutalin/labelImg) is the classic desktop tool, limited to bounding boxes for object detection. Also checkout [roLabelImg](https://github.com/cgvict/roLabelImg) which supports ROTATED rectangle regions, as often occurs in aerial imagery. [labelImg_OBB](https://github.com/heshameraqi/labelImg_OBB) is another fork supporting orinted bounding boxes (OBB)
-* [Labelme](https://github.com/wkentaro/labelme) is a very popular & simple dektop app for polygonal annotation suitable for object detection and semantic segmentation. Note it outputs annotations in a custom LabelMe JSON format which you will need to convert, e.g. using [labelme2coco](https://github.com/fcakyon/labelme2coco). Read [Labelme Image Annotation for Geotiffs](https://medium.com/@wvsharber/labelme-image-annotation-for-geotiffs-b460ba83804f)
 * [Label Studio](https://labelstud.io/) is a multi-type data labeling and annotation tool with standardized output format, syncing to buckets, and supports importing pre-annotations (create with a model). Checkout [label-studio-converter](https://github.com/heartexlabs/label-studio-converter) for converting Label Studio annotations into common dataset formats
 * [CVAT](https://github.com/cvat-ai/cvat) suports object detection, segmentation and classification via a local web app. [This article on Roboflow](https://blog.roboflow.com/cvat/) gives a good intro to CVAT. Checkout [CVAT images validator](https://github.com/developmentseed/cvat-images-validator)
 * [VoTT](https://github.com/Microsoft/VoTT) -> an electron app for building end to end Object Detection Models from Images and Videos, by Microsoft
