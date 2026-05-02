@@ -33,7 +33,7 @@ Note there are many annotation formats, although PASCAL VOC and coco-json are th
 
 ## Annotation tools with Geotiff support
 Relatively few annotation tools support Geotiffs directly. If not in this list, assume they just support PNG & JPEG image formats
-* [Labelme](https://github.com/wkentaro/labelme) is a very popular & simple dektop app for polygonal annotation suitable for object detection and semantic segmentation.
+* [Labelme](https://github.com/wkentaro/labelme) is a very popular & simple dektop app for polygonal annotation suitable for object detection and semantic segmentation. See [Annotate satellite imagery with LabelMe and convert the annotations to GeoJSON for use in GIS tools like QGIS.](https://github.com/wkentaro/labelme-satellite-image-demo)
 * [Groundwork](https://element84.com/groundwork/) -> A free image labeling tool for creating custom training datasets from satellite imagery
 * [Kili](https://kili-technology.com/) -> see their docs for importing multi-layer geosat assets
 * [labelbox.com](https://labelbox.com/) -> watch their webcast on building AI products from the ground up
